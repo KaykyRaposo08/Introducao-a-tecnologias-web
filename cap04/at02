@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Bimestrais — Cap. 4 / Ativ. 2</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        thead {
+            background-color: #e0e0e0;
+        }
+        tfoot {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        th[scope="row"] {
+            text-align: left;
+            background-color: #fcfcfc;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>Notas Bimestrais</h1>
+
+    <table>
+        <caption>Notas Bimestrais — Turma SI-2026, 1º Período</caption>
+
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Aluno</th>
+                <th scope="colgroup" colspan="4">Bimestres</th>
+                <th scope="col" rowspan="2">Média Final</th>
+            </tr>
+            <tr>
+                <th scope="col">1º Bim.</th>
+                <th scope="col">2º Bim.</th>
+                <th scope="col">3º Bim.</th>
+                <th scope="col">4º Bim.</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Ana Souza</th>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>7.5</td>
+                <td>8.0</td>
+                <td>8.25</td>
+            </tr>
+            <tr>
+                <th scope="row">Bruno Lima</th>
+                <td>7.0</td>
+                <td>6.5</td>
+                <td>8.0</td>
+                <td>7.5</td>
+                <td>7.25</td>
+            </tr>
+            <tr>
+                <th scope="row">Carla Dias</th>
+                <td>9.5</td>
+                <td>10.0</td>
+                <td>9.0</td>
+                <td>9.5</td>
+                <td>9.50</td>
+            </tr>
+            <tr>
+                <th scope="row">Daniel Silva</th>
+                <td>6.0</td>
+                <td>5.5</td>
+                <td>7.0</td>
+                <td>6.5</td>
+                <td>6.25</td>
+            </tr>
+            <tr>
+                <th scope="row">Eduarda Melo</th>
+                <td>8.0</td>
+                <td>8.0</td>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>8.37</td>
+            </tr>
+            <tr>
+                <th scope="row">Fábio Jr.</th>
+                <td>5.0</td>
+                <td>6.0</td>
+                <td>5.5</td>
+                <td>6.5</td>
+                <td>5.75</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Média da turma</th>
+                <td>7.3</td>
+                <td>7.5</td>
+                <td>7.6</td>
+                <td>7.8</td>
+                <td>7.56</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p><a href="../index.html">← Voltar à página principal</a></p>
+
+</body>
+</html>
