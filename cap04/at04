@@ -1,1 +1,125 @@
+Atividade 4 — Página Multimídia
+Arquivo: cap04-at04-multimidia.html
+Nível: 🔴 Difícil
+Seção de referência: 4.3.1, 4.3.2, 4.3.3, 4.3.4 e 4.3.5
+Contexto
+Você foi designado para criar a página de recursos multimídia do ambiente virtual de aprendizagem do curso. A página deve incorporar diferentes tipos de mídia de forma acessível e semântica, seguindo as boas práticas do HTML5.
+Objetivos de aprendizagem
+Ao concluir esta atividade, o estudante será capaz de:
+
+Incorporar vídeo nativo com múltiplas fontes, legenda WebVTT e imagem de poster;
+Incorporar áudio nativo com fallback adequado;
+Utilizar <iframe> para incorporar conteúdo externo com os atributos de acessibilidade e segurança corretos;
+Envolver todas as mídias com <figure> e <figcaption>;
+Utilizar <picture> com múltiplas fontes para imagens responsivas.
+Especificação
+Crie a página cap04-at04-multimidia.html com quatro blocos de mídia, cada um envolvido por <figure> com <figcaption>:
+
+
+
+Bloco 1 — Vídeo com legenda e poster
+
+Incorpore um vídeo utilizando o elemento <video> com:
+
+Atributo controls, width="800", height="450";
+Atributo poster apontando para qualquer imagem local (pode criar um placeholder: poster="poster-aula.jpg");
+Atributo preload="metadata";
+Pelo menos dois elementos <source>: um .mp4 e um .webm (os arquivos não precisam existir de fato — apenas a marcação deve ser correta);
+Um elemento <track> com kind="subtitles", srclang="pt", label="Português" e default, apontando para legendas/aula-html.vtt;
+Um parágrafo de fallback com link para download caso o navegador não suporte <video>;
+<figcaption> descrevendo o conteúdo do vídeo e citando a fonte.
+
+
+
+Bloco 2 — Áudio com fallback
+
+Incorpore um áudio utilizando o elemento <audio> com:
+
+Atributo controls e preload="metadata";
+Pelo menos dois elementos <source>: um .mp3 e um .ogg;
+Um parágrafo de fallback com link para download;
+<figcaption> com título do episódio e link para transcrição.html (o arquivo não precisa existir).
+
+
+
+Bloco 3 — Vídeo externo (YouTube) via <iframe>
+
+Incorpore um vídeo do YouTube via <iframe> com:
+
+O URL deve usar o domínio youtube-nocookie.com/embed/ (substitua VIDEO_ID por qualquer ID real de vídeo educacional em português de sua escolha);
+width="800" e height="450";
+Atributo title com descrição real do vídeo escolhido;
+Atributo loading="lazy";
+Atributos allow e allowfullscreen conforme o padrão do YouTube;
+<figcaption> identificando o vídeo, o canal e a plataforma.
+
+
+
+Bloco 4 — Imagem responsiva com <picture>
+
+Construa um elemento <picture> que demonstre art direction (mudança de enquadramento por viewport) com:
+
+Um <source> com media="(min-width: 768px)" apontando para img/banner-wide.jpg;
+Um <img> de fallback apontando para img/banner-mobile.jpg, com alt descritivo, width e height;
+<figcaption> descrevendo a imagem.
+
+Os arquivos de imagem não precisam existir de fato — apenas a marcação deve ser estruturalmente correta.
+
+
+Requisitos adicionais
+Todo o conteúdo da página deve estar dentro de um <main>;
+Inclua um <header> com título da página e um <footer> com seus dados (nome, matrícula, data);
+O <title> da página deve ser "Recursos Multimídia — Cap. 4 / Ativ. 4".
+Estrutura mínima esperada
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Recursos Multimídia — Cap. 4 / Ativ. 4</title>
+</head>
+<body>
+  <header>
+    <h1>Recursos Multimídia — Programação Web 1</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Aula em Vídeo</h2>
+      <figure>
+        <video controls width="800" height="450"
+               poster="poster-aula.jpg"
+               preload="metadata">
+          <source src="videos/aula-html.mp4" type="video/mp4" />
+          <source src="videos/aula-html.webm" type="video/webm" />
+          <track kind="subtitles" src="legendas/aula-html.vtt"
+                 srclang="pt" label="Português" default />
+          <p>
+            Seu navegador não suporta vídeo HTML5.
+            <a href="videos/aula-html.mp4">Baixe o vídeo aqui</a>.
+          </p>
+        </video>
+        <figcaption>
+          Vídeo 1 — Introdução ao HTML Semântico.
+          Produção própria, IFAL, 2026.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Bloco 2: <audio> -->
+    <!-- Bloco 3: <iframe> YouTube -->
+    <!-- Bloco 4: <picture> -->
+
+  </main>
+
+  <footer>
+    <p>
+      Atividade 4 — Capítulo 4 | Programação Web 1 |
+      Aluno: [Seu Nome] | Matrícula: [0000000] |
+      <time datetime="2026-01-01">Janeiro de 2026</time>
+    </p>
+    <p><a href="index.html">← Voltar à página principal</a></p>
+  </footer>
+</body>
+</html>
 
