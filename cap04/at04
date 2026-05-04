@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas Avançadas — Cap. 4 / Ativ. 3</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; }
+        section { border-bottom: 1px solid #ccc; margin-bottom: 20px; padding-bottom: 20px; }
+        h2 { color: #2c3e50; }
+        dt { font-weight: bold; color: #e67e22; margin-top: 10px; }
+        dd { margin-left: 20px; font-style: italic; color: #555; }
+    </style>
+</head>
+<body>
+
+    <h1>Guia de Referência Rápida — Desenvolvimento Web</h1>
+
+    <section>
+        <h2>1. Roteiro de Estudos</h2>
+        <p><strong>Etapa 1 — Fundamentos:</strong></p>
+        <ol type="1">
+            <li>Lógica de Programação
+                <ol type="a">
+                    <li>Variáveis e tipos</li>
+                    <li>Estruturas de repetição</li>
+                </ol>
+            </li>
+            <li>Versionamento com Git
+                <ol type="a">
+                    <li>Commits e Branches</li>
+                    <li>Repositórios Remotos</li>
+                </ol>
+            </li>
+            <li>Internet e Protocolos</li>
+        </ol>
+
+        <p>Após dominar a base, seguimos para a interface:</p>
+
+        <p><strong>Etapa 2 — Estilização:</strong></p>
+        <ol type="1" start="4">
+            <li>CSS Básico
+                <ol type="a">
+                    <li>Seletores e Cores</li>
+                    <li>Box Model</li>
+                </ol>
+            </li>
+            <li>Layout com Flexbox</li>
+            <li>Design Responsivo</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>2. Ranking de Tecnologias</h2>
+        <p>Ordem de importância para o mercado atual:</p>
+        <ol reversed>
+            <li>
+                <strong>JavaScript</strong>
+                <p>A linguagem essencial para interatividade no navegador.</p>
+            </li>
+            <li>
+                <strong>Python</strong>
+                <p>Extremamente versátil para dados e backend.</p>
+            </li>
+            <li>
+                <strong>React</strong>
+                <p>A biblioteca mais utilizada para interfaces modernas.</p>
+            </li>
+            <li>
+                <strong>SQL</strong>
+                <p>Fundamental para manipulação de bancos de dados.</p>
+            </li>
+            <li>
+                <strong>TypeScript</strong>
+                <p>Traz segurança e tipagem para projetos grandes.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>3. Glossário Técnico</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dt>HyperText Markup Language</dt>
+            <dd>Linguagem de marcação utilizada para estruturar o conteúdo da web.</dd>
+
+            <dt>API</dt>
+            <dd>Application Programming Interface: Conjunto de regras que permite que softwares se comuniquem.</dd>
+            <dd>No contexto web, refere-se geralmente a endpoints HTTP que retornam dados (JSON).</dd>
+
+            <dt>DOM</dt>
+            <dd>Document Object Model: Representação em árvore do documento HTML usada pelo navegador.</dd>
+
+            <dt>HTTP</dt>
+            <dt>HTTPS</dt>
+            <dd>Protocolos de transferência que definem como as mensagens são formatadas e transmitidas na rede.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação de alto nível, interpretada e multiparadigma.</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets: Linguagem usada para descrever a apresentação de um documento.</dd>
+
+            <dt>URL</dt>
+            <dd>Uniform Resource Locator: O endereço de um recurso específico na rede.</dd>
+
+            <dt>DNS</dt>
+            <dd>Sistema que traduz nomes de domínios (como google.com) em endereços IP.</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>4. Mapa de Tecnologias</h2>
+        <ul>
+            <li>Desenvolvimento Web
+                <ul>
+                    <li>Frontend
+                        <ul>
+                            <li>Linguagens
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </li>
+                            <li>Frameworks
+                                <ul>
+                                    <li>React</li>
+                                    <li>Vue.js</li>
+                                    <li>Angular</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Backend
+                        <ul>
+                            <li>Linguagens
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Java</li>
+                                    <li>Node.js</li>
+                                </ul>
+                            </li>
+                            <li>Bancos de Dados
+                                <ul>
+                                    <li>MySQL</li>
+                                    <li>PostgreSQL</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <p><a href="../index.html">← Voltar à página principal</a></p>
+
+</body>
+</html>
